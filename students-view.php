@@ -36,7 +36,7 @@ ob_start();
 		<p><br> <button class="go-back">Go Back</button> <br> <br></p>
 		</div>
 	</section>
-	
+
 	<script type="text/javascript" src="https://localhost/scheduler/javascript/script.js"></script>
 </body>
 </html>
