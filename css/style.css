@@ -1,1 +1,502 @@
+*, html, body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	scroll-behavior: smooth;
+}
 
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:14px;
+}
+
+button, input[type="submit"]{
+	cursor:pointer;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+	cursor:pointer;
+	outline:none;
+}
+
+.cover{
+	position:relative;
+	background-image:linear-gradient(180deg, #36B9CC 10%, #0051A4 100%);
+	background-size:cover;
+	height:100vh;
+	color:#858796;
+}
+
+.inner-cover{
+	padding:20px;
+	margin:3% 4%;
+	position:absolute;
+	background-color:#FFF;
+	border-radius:10px;
+	padding:3.5%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	height:91%;
+	width:90%;
+	overflow-y:auto;
+}
+
+.new-inner-cover{
+	overflow-y:auto;
+	padding-bottom:20px;
+}
+
+.logo{
+	width:100px;
+	height:100px;
+	margin:0 auto;
+}
+
+.logo img{
+	width:100%;
+	height:100%;
+}
+
+.school-name{
+	font-weight:bolder;
+	text-align:center;
+	font-size:20px;
+	margin:10px 0;
+}
+
+.proj-name, .proje-name{
+	text-align:center;
+	color:#000;
+	font-size:18px;
+}
+
+.proje-name{
+	background-color:#36B9CC;
+	padding:10px;
+	color:#FFF;
+	font-weight:bolder;
+}
+
+.inner-cover .form-cover{
+	width:400px;
+	margin:20px auto;
+}
+
+.form-cover form{
+	border-top:1px solid #858796;
+	border-bottom:1px solid #858796;
+	padding:20px 5px;
+}
+
+.resp{
+	color:#EA2929;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+.inner-cover form label{
+	font-weight:bolder;
+}
+
+.inner-cover form input{
+	width:100%;
+	border-radius:5px;
+	outline:none;
+	border:1px solid #858796;
+	margin-bottom:20px;
+	height:36px;
+	padding:5px;
+}
+
+.inner-cover form .submit{
+	padding:10px 15px;
+	border-radius:5px;
+	border:0;
+	display:block;
+	margin:0 auto;
+	font-weight:bolder;
+	color:#FFF;
+	background-color:#0051A4;
+}
+
+.form-cover p:last-child, .loglink{
+	margin-top:20px;
+	color:#0051A4;
+	font-weight:bold;
+	text-align:center;
+}
+
+.al{
+	text-align:center;
+	font-size:16px;
+	font-weight:bolder;
+	margin-bottom:10px;
+}
+
+/* Index Page */
+.home-container{
+    overflow:hidden;
+}
+
+.home-cover{
+    background:url('https://localhost/scheduler/images/home.jpeg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+}
+
+.home-blind{
+    background-color:#000;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    opacity:0.8;
+}
+
+.h-left{
+    width:60%;
+    z-index:2;
+    position:relative;
+}
+
+.trape{
+    height:0;
+    width:100%;
+    border-top:100vh outset #36B9CC;
+    border-left:0 solid transparent;
+    border-right:400px solid transparent;
+}
+
+.home-logo{
+    position:absolute;
+    z-index:3;
+    top:0;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+    padding-left:1%;
+    font-weight:bolder;
+    font-size:270%;
+    color:#FFF;
+}
+
+.home-logo img{
+    width:180px;
+    height:180px;
+    border-radius:5px;
+    margin-bottom:10px;
+    margin-left:10%;
+}
+
+.h-right{
+    background-color:transparent;
+    z-index:2;
+    position:relative;
+    text-align:center;
+    margin-left:-5%;
+    color:#FFF;
+    width:40%;
+    padding-top:2%;
+}
+
+.h-right h1{
+    font-size:420%;
+}
+
+.h-right button{
+    padding:15px 30px;
+    border:0;
+    border-radius:5px;
+    margin-top:20px;
+    font-weight:bolder;
+    background-color:#36B9CC;
+    color:#FFF;
+}
+
+.designer{
+	font-weight:bolder;
+	font-size:18px;
+	margin:20px 0;
+}
+
+/* Main work design */
+.container{
+	display:flex;
+	width:100%;
+	position:relative;
+}
+
+.leftbar{
+	width:20%;
+	position:fixed;
+	height:100vh;
+	background-image:linear-gradient(180deg, #36B9CC 10%, #0051A4 100%);
+}
+
+.logo-area{
+	text-align:center;
+	color:#FFF;
+	border-bottom:1px solid #BBB;
+	padding:10px 5px;
+}
+
+.logo-area img{
+	width:80px;
+	height:80px;
+	margin:8px 0;
+	border-radius:5px;
+}
+
+.menu{
+	border-bottom:1px solid #BBB;
+	margin:0 0 10px;
+	font-weight:bolder;
+	font-size:14px;
+	color:#FFF;
+}
+
+.menu p{
+	padding:20px;
+	display:flex;
+	align-items:center;
+}
+
+.menu p img{
+	margin-right:5px
+}
+
+.menu p:hover{
+	background-color:#36B9CC;
+}
+
+.mainbar{
+	width:80%;
+	right:0;
+	position:absolute;
+	min-height:100vh;
+	background-color:#E9EAED;
+}
+
+.desc{
+	display:flex;
+	align-items:center;
+	background-color:#FFF;
+	color:#858796;
+	padding:5px;
+	box-shadow:1px 1px 20px 1px #858796;
+	margin-bottom:10px;
+}
+
+.desc p:first-child{
+	width:100%;
+	padding-left:10px;
+}
+
+.desc p:last-child{
+	display:flex;
+	align-items:center;
+	border-left:1px solid #E4E4E4;
+	padding:0 20px;
+}
+
+.desc p:last-child img{
+	margin-right:5px;
+}
+
+.body-result{
+	box-shadow:1px 1px 20px 1px #858796;
+	background-color:#FFF;
+	min-height:570px;
+	margin:0 10px;
+	position:relative;
+}
+
+/* Add Administrator, Add courses, Change Password & Generate Timetable */
+.add-admin, .add-course, .add-hall, .gen-table, .change-password, .add-invig{
+	width:400px;
+	color:#858796;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	padding:100px 0 20px;
+}
+
+.add-course{
+	padding-top:20px;
+}
+
+.add-admin h2, .change-password h2, .add-course h2, .add-hall h2, .gen-table h2, .add-invig h2{
+	text-align:center;
+	padding:10px 0;
+	margin-bottom:25px;
+	background-color:#36B9CC;
+	color:#FFF;
+}
+
+.add-admin form, .change-password form .add-course form, .add-hall form, .gen-table form, .add-invig form{
+	padding-bottom:10px;
+}
+
+.add-admin label, .change-password label, .add-course label, .add-hall label, .gen-table label, .add-invig label{
+	font-weight:bold;
+}
+
+.add-admin form input, .change-password form input, .add-admin form select, .add-course form input, .add-course form select, .add-hall input, .gen-table input, .sem, .add-invig form input, .add-invig form select{
+	width:100%;
+	border-radius:5px;
+	outline:none;
+	border:1px solid #858796;
+	margin-bottom:20px;
+	height:36px;
+	padding:5px;
+}
+
+.session-area{
+	display:flex;
+}
+
+.session-area p{
+	margin:0 10px;
+	font-size:35px;
+}
+
+.start-date div, .end-date div{
+	display:flex;
+	align-items:center;
+	margin-bottom:20px;
+}
+
+.start-date select, .end-date select{
+	width:33.33%;
+	margin:0 5px;
+	height:35px;
+	border-radius:5px;
+	border:1px solid #858796;
+}
+
+.start-date select:first-child, .end-date select:first-child{
+	margin-left:0;
+}
+
+.start-date select:last-child, .end-date select:last-child{
+	margin-right:0;
+}
+
+.add-admin form .submit, .add-course form .submit, .add-hall form .submit, .gen-table form .submit, .change-password form .submit, .add-invig form .submit{
+	padding:10px 15px;
+	border-radius:5px;
+	border:0;
+	display:block;
+	margin:0 auto;
+	font-weight:bolder;
+	color:#FFF;
+	background-color:#36B9CC;
+}
+
+.depts{
+	border:1px solid #858796;
+	width:100%;
+	margin-bottom:20px;
+	padding:5px;
+	border-radius:5px;
+}
+
+.depts input{
+	width:20px !important;
+	margin:0 5px 0 0 !important;
+}
+
+.depts span{
+	display:flex;
+	align-items:center;
+}
+
+/* List Administrators, delete admin and view admin timetable */
+.list-admin, .registered-courses, .admin-view{
+	padding:20px;
+}
+
+.list-admin table, .registered-courses table, .new-cover table, .admin-view table{
+	width:100%;
+	color:#858796;
+	text-align:center;
+	border-collapse: collapse;
+	font-size:13px;
+}
+
+table thead tr{
+	background-color:#E1E1E1;
+}
+
+.list-admin table th, .list-admin table td, .registered-courses table th, .registered-courses table td, .new-cover table th, .new-cover table td, .admin-view table th, .admin-view table td{
+	border:1px solid #858796;
+	padding:10px 5px;
+}
+
+.new-cover table th, .new-cover table td{
+	padding:5px;
+}
+
+.new-cover p:last-child{
+	text-align:center;
+}
+
+.del-btn{
+	padding:5px;
+	border-radius:5px;
+	background-color:#EA2929;
+	color:#FFF;
+	border:0;
+}
+
+.del-notify{
+	height:80px;
+	margin:auto;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align:center;
+}
+
+.go-back{
+	padding:10px 50px;
+	border:0;
+	border-radius:5px;
+	background-color:#0051A4;
+	color:#FFF;
+}
+
+
+/*Students' and admin timetable view*/
+.no-timetable{
+	color:#EA2929;
+	font-weight:bold;
+	text-align:center;
+	margin-top:100px;
+}
+
+.resche{
+	margin-top:20px;
+	text-align:center;
+}
+
+.resche button{
+	padding:10px 50px;
+	border:0;
+	border-radius:5px;
+	background-color:#0051A4;
+	color:#FFF;
+}
